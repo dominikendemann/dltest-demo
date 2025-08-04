@@ -162,7 +162,7 @@ option = c(
     
 ```{r}
     
-sd_next(next_page = "end")
+sd_next(next_page = "page20")
 ```  
   
 ***
@@ -170,6 +170,57 @@ sd_next(next_page = "end")
     
 :::  
 
+
+::: {#page20 .sd-page}  
+
+::: {.panel-tabset}  
+### VERA Klassenrückmeldung
+<iframe align="mid" src= "KRM.pdf#page=1&zoom=90&pagemode=none"width="100%" height="500"></iframe>
+
+### VERA Schüler*innenrückmeldung
+<iframe align="mid" src= "SuSRM.pdf#page=1&zoom=90&pagemode=none"width="800" height="500"></iframe>
+
+### Klassenliste
+```{r}
+reactableOutput("tabelle")
+```
+
+### Internes Curriculum Deutsch
+<iframe align="mid" src= "CurrD.pdf#page=1&zoom=90&pagemode=none"width="800" height="500"></iframe>
+
+### Internes Curriculum Mathematik
+<iframe align="mid" src= "CurrM.pdf#page=1&zoom=90&pagemode=none"width="800" height="500"></iframe>
+
+:::  
+  
+
+
+```{r}
+    
+    sd_question(
+      type  = 'mc',
+      id    = 'V116',
+      label = "**With regard to the class feedback: In the upcoming German lessons, the focus in reading should be on...**",
+option = c(
+  "A) ... students linking information in texts and beginning to grasp texts as a whole." = "1",
+  "B) ... students recognizing themes and motives in the text that are not explicitly stated." = "2",
+  "C) ... students identifying letters, simple syllables, and familiar words in texts." = "3",
+  "D) ... students practicing careful searching for details in the text." = "4"
+)
+
+      )
+    )
+```
+    
+```{r}
+    
+sd_next(next_page = "end")
+```  
+  
+***
+<div style="font-size: 11px;">Dominik Endemann | Freie Universität Berlin | Fachbereich Erziehungswissenschaft und Psychologie | Arbeitsbereich Unterrichts- und Schulevaluation</div>  
+    
+:::   
 
 
 ::: {#end .sd-page}
@@ -187,4 +238,5 @@ sd_close("Beenden")
 <div style="font-size: 11px;">Dominik Endemann | Freie Universität Berlin | Fachbereich Erziehungswissenschaft und Psychologie | Arbeitsbereich Unterrichts- und Schulevaluation</div> 
 
 :::
+
 
