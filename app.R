@@ -35,7 +35,7 @@ db <- sd_database(
 server <- function(input, output, session) {
 
   # Define any conditional skip logic here (skip to page if a condition is true)
-  sd_skip_if(input$pw != "vera25" ~ "page29")
+  sd_skip_if()
 
   # Define any conditional display logic here (show a question if a condition is true)
   sd_show_if()
@@ -46,7 +46,6 @@ server <- function(input, output, session) {
   # Database designation and other settings
   sd_server(
     db = db,
-    required_questions = c("einverstanden", "info_2"), #Pflichtrfgen 
     language = "de"
         )
 
@@ -123,3 +122,4 @@ server <- function(input, output, session) {
 
 # shinyApp() initiates your app - don't change it
 shiny::shinyApp(ui = sd_ui(), server = server)
+
