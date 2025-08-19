@@ -155,7 +155,7 @@ option = c(
     
 ```{r}
     
-sd_next(next_page = "end")
+sd_next(next_page = "page19")
 ```  
   
 ***
@@ -206,7 +206,7 @@ reactableOutput("tabelle")
     
 ```{r}
     
-sd_next(next_page = "page20")
+sd_next(next_page = "end")
 ```  
   
 ***
@@ -283,3 +283,4 @@ sd_close("Beenden")
 <div style="font-size: 11px;">Dominik Endemann | Freie Universität Berlin | Fachbereich Erziehungswissenschaft und Psychologie | Arbeitsbereich Unterrichts- und Schulevaluation</div> 
 
 :::
+
